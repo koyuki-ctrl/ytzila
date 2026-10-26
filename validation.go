@@ -1,8 +1,8 @@
 package main
 
-import 	(
-	"regexp"
+import (
 	"fmt"
+	"regexp"
 )
 
 var youtubeURLPattern = regexp.MustCompile(

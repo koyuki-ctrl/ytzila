@@ -1,11 +1,5 @@
-# export XDG_CACHE_HOME=/home/ainradan/goinfre/ytzila
-# ARG ?= ""
-
 build: install
 	go build .
-
-run: build
-	./ytzila ${ARG}
 
 install:
 	go mod tidy
@@ -16,6 +10,7 @@ clean:
 
 re: clean build
 
-format: gofmt -w .
+format:
+	gofmt -w .
 
-.PHONY: build re run install
+.PHONY: build re install
